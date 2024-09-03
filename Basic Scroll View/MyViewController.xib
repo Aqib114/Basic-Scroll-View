@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans_Condensed-Medium.ttf">
+            <string>OpenSansCondensed-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyViewController" customModule="scrollviewtutorial" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="izo-JI-bsa">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <subviews>
+                        <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="V2v-JD-eZW">
+                            <rect key="frame" x="0.0" y="0.0" width="405" height="1677.6666666666667"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qQO-kP-P5C">
+                                    <rect key="frame" x="10" y="0.0" width="385" height="1677.6666666666667"/>
+                                    <mutableString key="text">Testing is an essential part of software development that ensures the application functions as expected and meets user requirements. It involves systematically running the application through various scenarios, both expected and edge cases, to identify any bugs or issues before the software is released. Testing helps in maintaining the quality of the software, reducing the chances of defects, and ensuring a smooth user experience. There are different levels of testing, including unit testing, integration testing, and system testing, each serving a specific purpose in the development process.
+
+Automated testing is particularly beneficial in software development, as it allows developers to run tests quickly and repeatedly, providing instant feedback on the code's quality. Unit tests, for instance, focus on individual components or functions, verifying that each part of the application behaves as intended. Integration tests, on the other hand, ensure that different modules or services within the application work together harmoniously. Automated tests can be run frequently, especially in continuous integration and continuous deployment (CI/CD) pipelines, to catch regressions early and prevent new changes from breaking existing functionality.
+
+In addition to automated testing, manual testing remains important, especially for user interface (UI) and user experience (UX) testing. Manual testers simulate real-world usage and interactions, identifying usability issues that automated tests might miss. Exploratory testing, a form of manual testing, involves testers using the application in ways that may not have been anticipated by developers, which can uncover unexpected bugs. By combining automated and manual testing approaches, teams can achieve comprehensive coverage, ensuring that the software is both technically sound and user-friendly.</mutableString>
+                                    <fontDescription key="fontDescription" name="OpenSansCondensed-Medium" family="Open Sans Condensed" pointSize="24"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <size key="shadowOffset" width="0.0" height="0.0"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="qQO-kP-P5C" secondAttribute="bottom" id="1rX-nt-amg"/>
+                                <constraint firstAttribute="trailing" secondItem="qQO-kP-P5C" secondAttribute="trailing" constant="10" id="8Al-7e-bOQ"/>
+                                <constraint firstItem="qQO-kP-P5C" firstAttribute="leading" secondItem="V2v-JD-eZW" secondAttribute="leading" constant="10" id="G08-aj-AW5"/>
+                                <constraint firstItem="qQO-kP-P5C" firstAttribute="top" secondItem="V2v-JD-eZW" secondAttribute="top" id="g6G-OP-ojx"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="V2v-JD-eZW" firstAttribute="trailing" secondItem="x75-z6-78O" secondAttribute="trailing" id="8vM-Ap-j1s"/>
+                        <constraint firstItem="V2v-JD-eZW" firstAttribute="width" secondItem="hma-9T-mRm" secondAttribute="width" multiplier="1.03053" id="Lnp-RK-dFv"/>
+                        <constraint firstItem="V2v-JD-eZW" firstAttribute="leading" secondItem="x75-z6-78O" secondAttribute="leading" id="YPG-mv-Aqq"/>
+                        <constraint firstItem="V2v-JD-eZW" firstAttribute="bottom" secondItem="x75-z6-78O" secondAttribute="bottom" id="aRo-vl-dr5"/>
+                        <constraint firstItem="V2v-JD-eZW" firstAttribute="top" secondItem="x75-z6-78O" secondAttribute="top" id="qkH-cn-N9i"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="x75-z6-78O"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="hma-9T-mRm"/>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="izo-JI-bsa" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="JgZ-xD-qX7"/>
+                <constraint firstItem="izo-JI-bsa" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="MUe-zO-KA7"/>
+                <constraint firstItem="izo-JI-bsa" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="jGn-GM-IRg"/>
+                <constraint firstAttribute="bottom" secondItem="izo-JI-bsa" secondAttribute="bottom" id="xHu-DX-bkt"/>
+            </constraints>
+            <point key="canvasLocation" x="124.42748091603053" y="-11.971830985915494"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
